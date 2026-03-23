@@ -17,8 +17,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_concurrencyreport';
-$plugin->version = 2026032300;
-$plugin->requires = 2020061500;
-$plugin->supported = array(39, 39);
-$plugin->release = '3.9.0';
+$plugin->version = 2026032303;
+$plugin->requires = 2022041900;
+$plugin->supported = array(400, 400);
+$plugin->release = '4.0.0';
 $plugin->maturity = MATURITY_STABLE;
