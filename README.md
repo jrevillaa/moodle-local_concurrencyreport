@@ -39,7 +39,7 @@ The `main` branch tracks the latest supported Moodle line and is currently prepa
 
 ## Requirements
 
-This branch works with Moodle 3.10 version  and above within the Moodle 3.10 release line.
+This branch works with Moodle 3.10 version 2020110900 and above within the Moodle 3.10 release line.
 
 Please use the matching branch or tag for older Moodle versions.
 
