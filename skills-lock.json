@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "moodle-plugin-development-rules": {
+      "source": "jrevillaa/moodle-plugin-development-rules",
+      "sourceType": "github",
+      "computedHash": "54ee14a464fee763e31f7c682ff50d6dda165a566d8b78b97f33dd98d91f488b"
+    }
+  }
+}

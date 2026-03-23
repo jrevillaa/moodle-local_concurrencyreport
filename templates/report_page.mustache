@@ -1,0 +1,52 @@
+<div class="local-concurrencyreport">
+    <h2>{{title}}</h2>
+    <div class="alert alert-info">{{definition}}</div>
+    {{{formhtml}}}
+
+    {{#errors}}
+        <div class="alert alert-danger">{{message}}</div>
+    {{/errors}}
+
+    {{#hasresults}}
+        <div class="local-concurrencyreport__summary">
+            <p>{{summaryline}}</p>
+            <p>{{recordsline}}</p>
+            {{#haspagination}}
+                <p>{{pagingline}}</p>
+            {{/haspagination}}
+            <div class="local-concurrencyreport__actions">
+                {{#exporturls}}
+                    <a class="btn btn-secondary" href="{{url}}">{{label}}</a>
+                {{/exporturls}}
+            </div>
+        </div>
+
+        <table class="generaltable">
+            <thead>
+                <tr>
+                    <th>{{bucketlabel}}</th>
+                    <th>{{concurrentuserslabel}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#rows}}
+                    <tr>
+                        <td>{{label}}</td>
+                        <td>{{value}}</td>
+                    </tr>
+                {{/rows}}
+            </tbody>
+        </table>
+
+        {{#haspagination}}
+            <nav class="local-concurrencyreport__pagination" aria-label="{{pagingline}}">
+                {{#haspreviouspage}}
+                    <a class="btn btn-link" href="{{previouspageurl}}">{{previouspagelabel}}</a>
+                {{/haspreviouspage}}
+                {{#hasnextpage}}
+                    <a class="btn btn-link" href="{{nextpageurl}}">{{nextpagelabel}}</a>
+                {{/hasnextpage}}
+            </nav>
+        {{/haspagination}}
+    {{/hasresults}}
+</div>

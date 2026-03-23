@@ -1,0 +1,45 @@
+<?php
+// This file is part of Moodle - http://moodle.org/
+
+$string['pluginname'] = 'Reporte historico de concurrencia';
+$string['settingsheading'] = 'Reporte historico de concurrencia';
+$string['privacy:metadata'] = 'El plugin Reporte historico de concurrencia solo lee los logs estandar de Moodle y no almacena datos personales adicionales.';
+$string['definition'] = 'La concurrencia activa se estima a partir de los logs estandar de Moodle. Un usuario cuenta como activo mientras tenga actividad dentro de la ventana configurada.';
+$string['activitywindow'] = 'Ventana de actividad en segundos';
+$string['activitywindow_desc'] = 'Cantidad de segundos durante los que un usuario sigue considerandose activo despues de su ultimo evento registrado.';
+$string['activitywindow_help'] = 'Este valor define durante cuanto tiempo un usuario sigue contandose como activo despues de su evento mas reciente en el log estandar de Moodle.';
+$string['maxsecondsrange'] = 'Rango maximo para granularidad por segundo';
+$string['maxsecondsrange_desc'] = 'Cantidad maxima de segundos permitidos al consultar por segundo.';
+$string['maxminutesrange'] = 'Rango maximo para granularidad por minuto';
+$string['maxminutesrange_desc'] = 'Cantidad maxima de segundos permitidos al consultar por minuto.';
+$string['maxhoursrange'] = 'Rango maximo para granularidad por hora';
+$string['maxhoursrange_desc'] = 'Cantidad maxima de segundos permitidos al consultar por hora.';
+$string['maxdaysrange'] = 'Rango maximo para granularidad por dia';
+$string['maxdaysrange_desc'] = 'Cantidad maxima de segundos permitidos al consultar por dia.';
+$string['rowsperpage'] = 'Filas por pagina';
+$string['rowsperpage_desc'] = 'Cantidad maxima de filas mostradas por pagina en el navegador. Las exportaciones siguen incluyendo el resultado completo.';
+$string['granularity'] = 'Granularidad';
+$string['granularity_second'] = 'Segundo';
+$string['granularity_minute'] = 'Minuto';
+$string['granularity_hour'] = 'Hora';
+$string['granularity_day'] = 'Dia';
+$string['granularity_month'] = 'Mes';
+$string['granularity_year'] = 'Ano';
+$string['audience'] = 'Alcance';
+$string['audience_students'] = 'Solo estudiantes';
+$string['audience_all'] = 'Todos los usuarios autenticados';
+$string['generatereport'] = 'Generar reporte';
+$string['downloadcsv'] = 'Descargar CSV';
+$string['downloadxlsx'] = 'Descargar XLSX';
+$string['bucket'] = 'Periodo';
+$string['concurrentusers'] = 'Usuarios concurrentes activos';
+$string['summaryline'] = 'Pico: {$a->max} | Promedio: {$a->avg} | Minimo: {$a->min}';
+$string['recordsline'] = 'Filas generadas: {$a}';
+$string['pagexofy'] = 'Pagina {$a->current} de {$a->total}';
+$string['previouspage'] = 'Pagina anterior';
+$string['nextpage'] = 'Pagina siguiente';
+$string['errorinvalidrange'] = 'La fecha final debe ser posterior a la fecha inicial.';
+$string['errorinvalidwindow'] = 'La ventana de actividad debe ser mayor que cero.';
+$string['errorinvalidgranularity'] = 'La granularidad seleccionada no es valida.';
+$string['errorinvalidaudience'] = 'El alcance seleccionado no es valido.';
+$string['errorrangetoolarge'] = 'El rango seleccionado es demasiado grande para esa granularidad. Reduce el rango o usa una granularidad mayor.';

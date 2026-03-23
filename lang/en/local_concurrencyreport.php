@@ -1,0 +1,45 @@
+<?php
+// This file is part of Moodle - http://moodle.org/
+
+$string['pluginname'] = 'Historical concurrency report';
+$string['settingsheading'] = 'Historical concurrency report';
+$string['privacy:metadata'] = 'The Historical concurrency report plugin only reads standard Moodle logs and does not store additional personal data.';
+$string['definition'] = 'Active concurrency is estimated from Moodle standard logs. A user counts as active while they have activity inside the configured activity window.';
+$string['activitywindow'] = 'Activity window in seconds';
+$string['activitywindow_desc'] = 'Number of seconds a user remains active after their last logged event.';
+$string['activitywindow_help'] = 'This value defines how long a user is still counted as active after their most recent event in the Moodle standard log.';
+$string['maxsecondsrange'] = 'Maximum range for second granularity';
+$string['maxsecondsrange_desc'] = 'Maximum number of seconds allowed when using second granularity.';
+$string['maxminutesrange'] = 'Maximum range for minute granularity';
+$string['maxminutesrange_desc'] = 'Maximum number of seconds allowed when using minute granularity.';
+$string['maxhoursrange'] = 'Maximum range for hour granularity';
+$string['maxhoursrange_desc'] = 'Maximum number of seconds allowed when using hour granularity.';
+$string['maxdaysrange'] = 'Maximum range for day granularity';
+$string['maxdaysrange_desc'] = 'Maximum number of seconds allowed when using day granularity.';
+$string['rowsperpage'] = 'Rows per page';
+$string['rowsperpage_desc'] = 'Maximum number of rows shown per page in the browser. Exports still include the full result.';
+$string['granularity'] = 'Granularity';
+$string['granularity_second'] = 'Second';
+$string['granularity_minute'] = 'Minute';
+$string['granularity_hour'] = 'Hour';
+$string['granularity_day'] = 'Day';
+$string['granularity_month'] = 'Month';
+$string['granularity_year'] = 'Year';
+$string['audience'] = 'Audience';
+$string['audience_students'] = 'Students only';
+$string['audience_all'] = 'All authenticated users';
+$string['generatereport'] = 'Generate report';
+$string['downloadcsv'] = 'Download CSV';
+$string['downloadxlsx'] = 'Download XLSX';
+$string['bucket'] = 'Period';
+$string['concurrentusers'] = 'Active concurrent users';
+$string['summaryline'] = 'Peak: {$a->max} | Average: {$a->avg} | Minimum: {$a->min}';
+$string['recordsline'] = 'Rows generated: {$a}';
+$string['pagexofy'] = 'Page {$a->current} of {$a->total}';
+$string['previouspage'] = 'Previous page';
+$string['nextpage'] = 'Next page';
+$string['errorinvalidrange'] = 'The end date must be later than the start date.';
+$string['errorinvalidwindow'] = 'The activity window must be greater than zero.';
+$string['errorinvalidgranularity'] = 'The selected granularity is not valid.';
+$string['errorinvalidaudience'] = 'The selected audience is not valid.';
+$string['errorrangetoolarge'] = 'The selected date range is too large for that granularity. Reduce the range or use a larger granularity.';
