@@ -39,7 +39,7 @@ The `main` branch tracks the latest supported Moodle line and is currently prepa
 
 ## Requirements
 
-This branch works with Moodle 4.0 version  and above within the Moodle 4.0 release line.
+This branch works with Moodle 4.0 version 2022041900 and above within the Moodle 4.0 release line.
 
 Please use the matching branch or tag for older Moodle versions.
 
